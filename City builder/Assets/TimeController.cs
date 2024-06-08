@@ -82,24 +82,4 @@ public class TimeController : MonoBehaviour
         PauseButton.SetActive(true);
         UnpauseButton.SetActive(false);
     }
-
-    public void TimeControllerButtonLess()
-    {
-        if (timeMultiplier == 0)
-        {
-            timeMultiplier = 5;
-        }
-        else if (timeMultiplier == 1)
-        {
-            timeMultiplier = 5;
-        }
-        else if (timeMultiplier == 2)
-        {
-            timeMultiplier = 1;
-        }
-        else if (timeMultiplier == 5)
-        {
-            timeMultiplier = 2;
-        }
-    }
 }
