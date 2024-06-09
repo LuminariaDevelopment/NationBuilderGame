@@ -66,41 +66,10 @@ public class TimeCounter : MonoBehaviour
         MonthText.text = fMonths.ToString();
         YearText.text = fYears.ToString();
 
-        //Sets it to winter;
-        if (fMonths > 11 && fMonths < 3)
-        {
-            Spring = false;
-            Summer = false;
-            Fall = false;
-            Winter = true;
-        }
-        
-        //Sets it to summer
-        if (fMonths > 5 && fMonths < 9)
-        {
-            Spring = false;
-            Summer = true;
-            Fall = false;
-            Winter = false;
-        }
-
-        //Sets it to spring;
-        if (fMonths > 2 && fMonths < 6)
-        {
-            Spring = false;
-            Summer = false;
-            Fall = false;
-            Winter = true;
-        }
-
-        //Sets it to fall
-        if (fMonths > 8 && fMonths < 12)
-        {
-            Spring = false;
-            Summer = false;
-            Fall = true;
-            Winter = false;
-        }
+        Spring = (fMonths >= 3 && fMonths <= 5);
+        Winter = (fMonths == 12 || fMonths == 1 || fMonths == 2);
+        Summer = (fMonths >= 6 && fMonths <= 8);
+        Fall = (fMonths >= 9 && fMonths <= 11);
 
         MinutesTimeDisplay.text = (fMinutes.ToString("00"));
         HoursTimeDisplay.text = (fHours.ToString("00"));
