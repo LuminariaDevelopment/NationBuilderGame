@@ -40,32 +40,17 @@ public class TimeController : MonoBehaviour
     //TimeButtons
     public void OneX()
     {
-        timeMultiplier = 1;
-        previousMultiplier = 1;
-        HighlightedButton10X.SetActive(false);
-        HighlightedButton5X.SetActive(false);
-        HighlightedButton1X.SetActive(true);
-        Unpause();
+        SetMultiplier(1);
     }
 
     public void FiveX()
     {
-        timeMultiplier = 5;
-        previousMultiplier = 5;
-        HighlightedButton10X.SetActive(false);
-        HighlightedButton5X.SetActive(true);
-        HighlightedButton1X.SetActive(false);
-        Unpause();
+        SetMultiplier(5);
     }
 
     public void TenX()
     {
-        timeMultiplier = 10;
-        previousMultiplier = 10;
-        HighlightedButton10X.SetActive(true);
-        HighlightedButton5X.SetActive(false);
-        HighlightedButton1X.SetActive(false);
-        Unpause();
+        SetMultiplier(10);
     }
     
 
@@ -81,5 +66,17 @@ public class TimeController : MonoBehaviour
         timeMultiplier = previousMultiplier;
         PauseButton.SetActive(true);
         UnpauseButton.SetActive(false);
+    }
+
+    void SetMultiplier(int multiplier)
+    {
+        timeMultiplier = multiplier;
+        previousMultiplier = multiplier;
+
+        HighlightedButton1X.SetActive(multiplier == 1);
+        HighlightedButton5X.SetActive(multiplier == 5);
+        HighlightedButton10X.SetActive(multiplier == 10);
+        UnpauseButton.SetActive(false);
+        PauseButton.SetActive(true);
     }
 }
