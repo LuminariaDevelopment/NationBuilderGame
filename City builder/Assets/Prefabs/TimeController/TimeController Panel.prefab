@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 7493548169125361074}
   - component: {fileID: 7131565233514371619}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: TimeController Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
