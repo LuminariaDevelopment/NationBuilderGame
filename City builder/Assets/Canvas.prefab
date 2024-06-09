@@ -799,10 +799,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -826,7 +827,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.1
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -936,7 +937,8 @@ MonoBehaviour:
   m_text: ':'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1521,10 +1523,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 0000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1548,7 +1551,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 39.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1757,10 +1760,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1784,7 +1788,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 41.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2387,10 +2391,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2414,7 +2419,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 41.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2599,10 +2604,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
-  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51, type: 2}
+  m_sharedMaterial: {fileID: 1963521081754239355, guid: 07525d5e9d5ee7c4f8321ebfbc7a1a51,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2626,7 +2632,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.25
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
