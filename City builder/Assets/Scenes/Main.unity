@@ -511,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomingSpeed: 10
   step: 0.01
-  camMaxY: 0
+  camMaxY: 10
 --- !u!1 &796886725
 GameObject:
   m_ObjectHideFlags: 0
