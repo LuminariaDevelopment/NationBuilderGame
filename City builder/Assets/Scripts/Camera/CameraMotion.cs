@@ -24,6 +24,7 @@ namespace CameraControl {
 		}
 
 		private void Move() {
+			_targetPosition.y = 0;
 			Vector3 nextTargetPosition = _targetPosition + _input * _speed;
 			if (IsInBounds(nextTargetPosition)) _targetPosition = nextTargetPosition;
 			transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _smoothing);
