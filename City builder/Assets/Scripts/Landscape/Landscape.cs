@@ -12,19 +12,19 @@ namespace CityBuilder.Terrains.C01
         protected Terrain terrain;
         protected TerrainData terrainData;
 
-        [SerializeField] protected TerrainResolution heightMapResolution = TerrainResolution.Ultra_HD;
-        [SerializeField] protected TerrainResolution controlTextureResolution = TerrainResolution.Ultra_HD;
-        [SerializeField] protected TerrainResolution baseTextureResolution = TerrainResolution.Ultra_HD;
+        [SerializeField] protected TerrainResolution heightMapResolution = TerrainResolution.Moderate;
+        [SerializeField] protected TerrainResolution controlTextureResolution = TerrainResolution.Moderate;
+        [SerializeField] protected TerrainResolution baseTextureResolution = TerrainResolution.Moderate;
 
         /// Layers
         [SerializeField] protected TerrainLayer[] terrainLayers;
         [SerializeField] protected List<Material> materials;
 
         /// Length of the terrain.
-        [SerializeField] protected int terrain_Length = 100000;
+        [SerializeField] protected int terrain_Length = 5000;
 
         /// Width of the terrain.
-        [SerializeField] protected int terrain_Width = 100000;
+        [SerializeField] protected int terrain_Width = 5000;
 
         /// Height of the terrain.
         [SerializeField] protected int terrain_Height = 2000;

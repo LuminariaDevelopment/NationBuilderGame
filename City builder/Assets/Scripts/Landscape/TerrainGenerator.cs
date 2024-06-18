@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace CityBuilder.Terrains.C01
@@ -5,14 +7,17 @@ namespace CityBuilder.Terrains.C01
     [RequireComponent(typeof(Mountain), typeof(Land))]
     public class TerrainGenerator : MonoBehaviour
     {
-        public Mountain mountain;
-        public Land land;
+
+        public bool m_Land = true;
+        public bool m_Mountain = true;
+        private Mountain mountain;
+        private Land land;
 
         // public Water water;
 
         private void Awake()
         {
-            if (mountain == null)
+            if (mountain == null && m_Mountain)
             {
                 if (!TryGetComponent<Mountain>(out mountain))
                 {
@@ -20,7 +25,7 @@ namespace CityBuilder.Terrains.C01
                 }
             }
 
-            if (land == null)
+            if (land == null && m_Land)
             {
                 if (!TryGetComponent<Land>(out land))
                 {
