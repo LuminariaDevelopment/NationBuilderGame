@@ -51,7 +51,9 @@ namespace CityBuilder.Unity.Inspector.GUI
 
 
             property.NoiseScale = EditorGUILayout.FloatField(new GUIContent("Noise Scale", "The Lower the value the Grater the Noise effect , Tip: Use range between ( 350 - 550 ) to best effect"), property.NoiseScale);
-            property.Radius = EditorGUILayout.FloatField(new GUIContent("Radius", "To set the noise in this radius, Tip: Use range between ( 345 - MAX Value  ) to best effect"), property.Radius);
+
+            if (property.LandscapeShape == TerrainShape.Round)
+                property.Radius = EditorGUILayout.FloatField(new GUIContent("Radius", "To set the noise in this radius, Tip: Use range between ( 345 - MAX Value  ) to best effect"), property.Radius);
 
             EditorGUILayout.Space();
 

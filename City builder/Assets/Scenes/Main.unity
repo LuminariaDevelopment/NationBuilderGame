@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d7ba97beba26e4fa8601ee50eaadcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mountain: {fileID: 0}
-  land: {fileID: 0}
+  m_Land: 1
+  m_Mountain: 1
 --- !u!114 &39444486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,17 +168,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783297e9f6a0de24cbcae76b3e73fc84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightMapResolution: 4097
-  controlTextureResolution: 4097
-  baseTextureResolution: 4097
-  terrainLayers: []
+  heightMapResolution: 512
+  controlTextureResolution: 512
+  baseTextureResolution: 512
+  terrainLayers:
+  - {fileID: 8574412962073106934, guid: 92f6661f52f569044a277786a4ac782a, type: 2}
   materials: []
-  terrain_Length: 100000
-  terrain_Width: 100000
+  terrain_Length: 5000
+  terrain_Width: 5000
   terrain_Height: 2000
-  center: {x: 2048.5, y: 2048.5}
+  center: {x: 256, y: 256}
   size: {x: 0, y: 0}
-  radius: 16
+  radius: 0
   totalLandArea: 0
   NoiseScale: 5
 --- !u!114 &39444487
@@ -193,18 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b457454c0be53d4087583fe73306e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightMapResolution: 4097
-  controlTextureResolution: 4097
-  baseTextureResolution: 4097
-  terrainLayers: []
+  heightMapResolution: 512
+  controlTextureResolution: 512
+  baseTextureResolution: 512
+  terrainLayers:
+  - {fileID: 8574412962073106934, guid: 92f6661f52f569044a277786a4ac782a, type: 2}
   materials: []
-  terrain_Length: 100000
-  terrain_Width: 100000
+  terrain_Length: 5000
+  terrain_Width: 5000
   terrain_Height: 2000
-  center: {x: 2048.5, y: 2048.5}
+  center: {x: 256, y: 256}
   size: {x: 0, y: 0}
-  radius: 16
-  totalLandArea: 1.4100654e+9
+  radius: 0
+  totalLandArea: 25000000
   NoiseScale: 520
   centerHeight: -1.83
   surroundingHeight: 1.83

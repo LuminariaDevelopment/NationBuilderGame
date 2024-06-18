@@ -7,7 +7,7 @@ namespace CityBuilder.Terrains.C01
     public class Mountain : Landscape
     {
         #region Variables
-        private TerrainShape landscapeShape;
+        [SerializeField] private TerrainShape landscapeShape;
         private Land land;
         public float NoiseScale = 520f;
         private float mountainPercentage = 0;

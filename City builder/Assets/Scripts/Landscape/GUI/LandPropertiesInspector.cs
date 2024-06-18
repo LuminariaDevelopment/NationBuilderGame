@@ -23,9 +23,9 @@ namespace CityBuilder.Unity.Inspector.GUI
 
             property.Terrain_Height = EditorGUILayout.IntField("Height", property.Terrain_Height);
 
-            property.NoiseScale = EditorGUILayout.FloatField("Noise Scale", property.NoiseScale);
+            // property.NoiseScale = EditorGUILayout.FloatField("Noise Scale", property.NoiseScale);
 
-            property.Radius = EditorGUILayout.FloatField(new GUIContent("Radius", $"To set the noise in this radius, Tip: Use range between ( 1300 - 2000 ) to best effect"), property.Radius);
+            // property.Radius = EditorGUILayout.FloatField(new GUIContent("Radius", $"To set the noise in this radius, Tip: Use range between ( 1300 - 2000 ) to best effect"), property.Radius);
             property.Center = EditorGUILayout.Vector2Field("Center", property.Center);
 
             EditorGUILayout.Space();
