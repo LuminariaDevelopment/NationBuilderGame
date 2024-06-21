@@ -6,7 +6,7 @@ namespace CameraControl {
 		[SerializeField] private float _smoothing = 5f;
 		[SerializeField] private Vector2 _range = new (100, 100);
 		
-		private Vector3 _targetPosition;
+		public Vector3 _targetPosition;
 		private Vector3 _input;
 
 		private void Awake() {
@@ -24,7 +24,6 @@ namespace CameraControl {
 		}
 
 		private void Move() {
-			_targetPosition.y = 0;
 			Vector3 nextTargetPosition = _targetPosition + _input * _speed;
 			if (IsInBounds(nextTargetPosition)) _targetPosition = nextTargetPosition;
 			transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _smoothing);

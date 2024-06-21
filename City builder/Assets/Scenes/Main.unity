@@ -490,6 +490,7 @@ GameObject:
   - component: {fileID: 932049228}
   - component: {fileID: 932049227}
   - component: {fileID: 932049226}
+  - component: {fileID: 932049230}
   m_Layer: 0
   m_Name: CameraRoot (1)
   m_TagString: Untagged
@@ -543,6 +544,7 @@ MonoBehaviour:
   _speed: 0.2
   _smoothing: 10
   _range: {x: 10000, y: 10000}
+  _targetPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &932049229
 Transform:
   m_ObjectHideFlags: 0
@@ -559,6 +561,19 @@ Transform:
   - {fileID: 1844226178}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &932049230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932049225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74164ec428aaa884896d57f5ac3b55ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rayDist: 1
 --- !u!1 &1268432955
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ namespace CameraControl {
         [SerializeField] private Vector2 zoomRange = new Vector2(5f, 20f);
         [SerializeField] private Transform cameraTransform;
 
-        private float targetZoom;
+        public float targetZoom;
         private float currentZoom;
 
         private void Awake() {
