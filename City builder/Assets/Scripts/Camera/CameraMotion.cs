@@ -9,9 +9,10 @@ namespace CameraControl {
 		public Vector3 _targetPosition;
 		private Vector3 _input;
 
-		private void Awake() {
+
+        private void Awake() {
 			_targetPosition = transform.position;
-		}
+        }
 			
 		private void HandleInput() {
 			float x = Input.GetAxisRaw("Horizontal");
@@ -21,6 +22,7 @@ namespace CameraControl {
 			Vector3 forward = transform.forward * z;
 
 			_input = (forward + right).normalized;
+			_input.y = 0;
 		}
 
 		private void Move() {

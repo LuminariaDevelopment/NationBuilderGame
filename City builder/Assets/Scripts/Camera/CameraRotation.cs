@@ -20,9 +20,9 @@ namespace CameraControl {
         }
 
         private void HandleInput() {
-			if (!Input.GetMouseButton(2)) return;
+            if (!Input.GetMouseButton(2)) return;
 			_targetAngle += Input.GetAxisRaw("Mouse X") * _speed;
-            _targetAngleX -= Input.GetAxisRaw("Mouse Y") * _speed;
+			_targetAngleX -= Input.GetAxisRaw("Mouse Y") * _speed;
 			_targetAngleX = Mathf.Clamp(_targetAngleX, -20, 20);
         }
 
