@@ -18,46 +18,18 @@ public class CameraCollision : MonoBehaviour
     {
         _camMotion = FindAnyObjectByType<CameraMotion>();
         _cameraTransform = GameObject.Find("Main Camera").transform;
-        CameraGravity();
     }
 
     private void Update()
     {
-        RaycastHit hit1;
-        RaycastHit hit2;
+        RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, Vector3.down, out hit1, Mathf.Infinity, _layerMask))
+        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 10000, transform.position.z), Vector3.down, out hit, Mathf.Infinity, _layerMask))
         {
-            _camMotion._targetPosition.y = hit1.point.y + 1;
-        }
-        if (Physics.Raycast(transform.position, Vector3.up, out hit2, Mathf.Infinity, _layerMask))
-        {
-            _camMotion._targetPosition.y = hit2.point.y + 1;
-        }
-    }
-
-    void CameraGravity()
-    {
-        bool _rayForward = Physics.Raycast(_cameraTransform.position, Vector3.forward, _rayDist);
-        bool _rayBackward = Physics.Raycast(_cameraTransform.position, Vector3.back, _rayDist);
-        bool _rayRight = Physics.Raycast(_cameraTransform.position, Vector3.right, _rayDist);
-        bool _rayLeft = Physics.Raycast(_cameraTransform.position, Vector3.left, _rayDist);
-
-        if (!Physics.Raycast(transform.position, Vector3.down, _rayDist))
-        {
-            if (!Physics.Raycast(_cameraTransform.position, Vector3.down, _rayDist))
-            {
-                _camMotion._targetPosition.y -= 1;
-            }
+                _camMotion._targetPosition.y = hit.point.y + 1;
+                Debug.Log("HIT!");
         }
 
-        if (_rayForward || _rayBackward || _rayLeft || _rayRight)
-        {
-            _camMotion._targetPosition.y += 1;
-        }
-
-
-        Invoke("CameraGravity", 0.15f);
     }
 
 }
