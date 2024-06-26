@@ -13,6 +13,7 @@ public class CameraCollision : MonoBehaviour
     CameraMotion _camMotion;
 
     public LayerMask _layerMask;
+    public LayerMask _inverseLayermask;
 
     private void Start()
     {
@@ -24,12 +25,14 @@ public class CameraCollision : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 10000, transform.position.z), Vector3.down, out hit, Mathf.Infinity, _layerMask))
+        if (Physics.Raycast(new Vector3(_cameraTransform.position.x, _cameraTransform.transform.position.y + 10000, _cameraTransform.position.z), Vector3.down, out hit, Mathf.Infinity, _inverseLayermask))
+        {
+            _camMotion._targetPosition.y = hit.point.y + 1;
+        }
+        else if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 10000, transform.position.z), Vector3.down, out hit, Mathf.Infinity, _layerMask))
         {
                 _camMotion._targetPosition.y = hit.point.y + 1;
-                Debug.Log("HIT!");
         }
-
     }
 
 }

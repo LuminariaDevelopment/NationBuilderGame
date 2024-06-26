@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d7ba97beba26e4fa8601ee50eaadcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Land: 0
+  m_Land: 1
   m_Mountain: 1
 --- !u!114 &39444486
 MonoBehaviour:
@@ -578,6 +578,9 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 8
+  _inverseLayermask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &1268432955
 GameObject:
   m_ObjectHideFlags: 0
