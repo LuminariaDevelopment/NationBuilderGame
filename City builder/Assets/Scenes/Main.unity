@@ -574,11 +574,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74164ec428aaa884896d57f5ac3b55ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rayDist: 1
   _layerMask:
     serializedVersion: 2
     m_Bits: 8
-  _inverseLayermask:
+  _inverseLayerMask:
     serializedVersion: 2
     m_Bits: 1
 --- !u!1 &1268432955
@@ -733,7 +732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!224 &1450550043 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7643287002567937937, guid: d1bb9e08d69d3084eb462374a731ca72,
