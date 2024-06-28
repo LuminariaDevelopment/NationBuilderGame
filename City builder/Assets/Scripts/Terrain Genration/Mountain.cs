@@ -217,6 +217,7 @@ namespace CityBuilder.Terrains.C01
 
         #endregion
 
+
         /// <summary>
         /// Awake is called when the script instance is being loaded.
         /// </summary>
@@ -226,6 +227,7 @@ namespace CityBuilder.Terrains.C01
             {
                 Debug.Log("Got It");
             }
+
         }
 
         public override void Generate()

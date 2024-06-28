@@ -15,14 +15,12 @@ namespace CityBuilder.Terrains.C01
 
         private void Awake()
         {
-            Debug.Log("Check 0");
 
             if (mountain == null && m_Mountain)
             {
                 if (!TryGetComponent(out mountain))
                 {
                     mountain = gameObject.AddComponent<Mountain>();
-                    Debug.Log("Check 1");
                 }
             }
 
@@ -46,9 +44,10 @@ namespace CityBuilder.Terrains.C01
 
         public void Build()
         {
-            Debug.Log("Check 1.5");
             if (mountain != null && m_Mountain) { mountain.Generate(); }
 
+            Terrain _terrain = FindAnyObjectByType<Terrain>();
+            _terrain.gameObject.layer = 3;
 
             // if (land != null && m_Land) { land.Generate(); Debug.Log("Check 2"); }
             // Debug.Log("Check Ended");
