@@ -48,6 +48,15 @@ namespace CityBuilder.Terrains.C01
 
 
 
+        //
+        // Terrain :
+        //          Terrain values.
+        //
+
+        public int _baseMapDistance = 1000;
+
+
+
 
         public List<Material> _heightMaterial;
         // public Material _defaultMatirial;
@@ -215,6 +224,13 @@ namespace CityBuilder.Terrains.C01
         }
 
 
+        public int BaseMapDistance
+        {
+            get { return _baseMapDistance; }
+            set { _baseMapDistance = Mathf.Clamp(value, 0, 20000); }
+        }
+
+
         #endregion
 
 
@@ -253,6 +269,7 @@ namespace CityBuilder.Terrains.C01
                 terrainLayers = LandscapeLayers,
             };
 
+
             // _defaultMatirial = Terrain.materialTemplate;
 
             float[,] noise = Noise.GenerateNoise(Seed, (int)HeightMapResolution, Radius, Center, NoiseScale, Frequency, Octaves, Amplitude, MountainPercentage, MountainRadius, MountainHeight, MountainFrequency, MountainNoiceScale, sloapGenration);
@@ -262,6 +279,7 @@ namespace CityBuilder.Terrains.C01
             TerrainData.SetHeights(0, 0, noise);
 
             Terrain = Terrain.CreateTerrainGameObject(_terrainData).GetComponent<Terrain>();
+            Terrain.basemapDistance = BaseMapDistance;
 
             if (TOPOGRAPHY_MAP)
             {
@@ -298,6 +316,7 @@ namespace CityBuilder.Terrains.C01
 
 
             TerrainData.SetHeights(0, 0, noise);
+            Terrain.basemapDistance = BaseMapDistance;
 
             if (TOPOGRAPHY_MAP)
             {

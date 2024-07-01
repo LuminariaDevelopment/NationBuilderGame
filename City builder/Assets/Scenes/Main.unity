@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -215,13 +215,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b457454c0be53d4087583fe73306e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _seed: 321564
+  _seed: 321565
   _heightMapResolution: 4097
   _controlTextureResolution: 4096
   _baseTextureResolution: 4096
   _landScapeLength: 5000
   _landScapeWidth: 5000
-  _landScapeHeight: 500
+  _landScapeHeight: 10000
   _terrainLayers:
   - {fileID: 8574412962073106934, guid: 92f6661f52f569044a277786a4ac782a, type: 2}
   - {fileID: 8574412962073106934, guid: 6364e5e0c8764ec4390ace8a62c3832a, type: 2}
@@ -237,16 +237,17 @@ MonoBehaviour:
   DEBUGING: 0
   TOPOGRAPHY_MAP: 0
   ENABLE_GIZMOS: 1
-  _frequency: 20.5
+  _frequency: 1.77
   _octaves: 5
   _granularity: 0
   _turbulence: 0
   _amplitude: 0.008
   _mountainPercentage: 21
   _mountainRadius: 682.1
-  _mountainHeight: 0.08
+  _mountainHeight: 0.01
   _mountainFrequency: 0.01
-  _mountainNoiceScale: 38.07
+  _mountainNoiceScale: 5.5
+  _baseMapDistance: 52112
   _heightMaterial:
   - {fileID: 2100000, guid: 4c8a3f2b2b73c164f91251083ffa93cb, type: 2}
   - {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
@@ -564,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f5816282766de40928adc59a2ba09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.2
+  _speed: 5
   _smoothing: 10
   _range: {x: 10000, y: 10000}
   _targetPosition: {x: 0, y: 0, z: 0}

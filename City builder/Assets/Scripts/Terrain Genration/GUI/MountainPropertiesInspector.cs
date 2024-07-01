@@ -1,3 +1,4 @@
+using System;
 using CityBuilder.Terrains.C01;
 using UnityEditor;
 using UnityEngine;
@@ -73,6 +74,11 @@ namespace CityBuilder.Unity.Inspector.GUI
             DrawLandscapeSeed(property);
             EditorGUILayout.Space();
 
+            EditorGUILayout.LabelField("Landscape Detail", _headerStyle);
+            EditorGUILayout.Space();
+            DrawLandscapeDetail(property);
+            EditorGUILayout.Space();
+
             EditorGUILayout.LabelField("Landscape Size Properties", _headerStyle);
             EditorGUILayout.Space();
             DrawLandscapeSize(property);
@@ -104,6 +110,16 @@ namespace CityBuilder.Unity.Inspector.GUI
 
             ApplyGUIChanges();
         }
+
+        private void DrawLandscapeDetail(Mountain property)
+        {
+            EditorGUILayout.BeginVertical(_propertyStyle);
+
+            property.BaseMapDistance = EditorGUILayout.IntField("Render Distance", property.BaseMapDistance);
+
+            EditorGUILayout.EndVertical();
+        }
+
 
         private void DrawLandscapeSeed(Mountain property)
         {
